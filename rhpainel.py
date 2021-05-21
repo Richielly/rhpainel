@@ -2,9 +2,9 @@ import pandas as pd
 import streamlit as st
 from datetime import *
 import db
-
+st.sidebar.text("V_1.0.7")
 uploaded_file = st.sidebar.file_uploader("Buscar Arquivo",type=['xlsx','xls','csv','txt'])
-st.sidebar.text("V_1.0.6")
+
 if uploaded_file is not None:
     file_details = {"FileName":uploaded_file.name,"FileType":uploaded_file.type,"FileSize":uploaded_file.size}
     #st.write(file_details)
