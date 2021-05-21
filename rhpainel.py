@@ -4,7 +4,7 @@ from datetime import *
 import db
 
 uploaded_file = st.sidebar.file_uploader("Buscar Arquivo",type=['xlsx','xls','csv','txt'])
-
+st.text("V_1.0.5")
 if uploaded_file is not None:
     file_details = {"FileName":uploaded_file.name,"FileType":uploaded_file.type,"FileSize":uploaded_file.size}
     #st.write(file_details)
