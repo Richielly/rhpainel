@@ -3,7 +3,7 @@ import streamlit as st
 from datetime import *
 import db
 
-uploaded_file = st.file_uploader("Buscar Arquivo",type=['xlsx','xls','csv','txt'])
+uploaded_file = st.sidebar.file_uploader("Buscar Arquivo",type=['xlsx','xls','csv','txt'])
 
 if uploaded_file is not None:
     file_details = {"FileName":uploaded_file.name,"FileType":uploaded_file.type,"FileSize":uploaded_file.size}
