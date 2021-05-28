@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 from datetime import *
 import db
-st.sidebar.text("V_1.0.7")
+st.sidebar.text("V_1.0.8")
 uploaded_file = st.sidebar.file_uploader("Buscar Arquivo",type=['xlsx','xls','csv','txt'])
 
 if uploaded_file is not None:
